@@ -1,0 +1,56 @@
+/* Create three equal columns that floats next to each other */
+.column {
+    width: 260px;
+    height: 400px;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.column:hover{
+    box-shadow: 0 0 5px 5px #dbd7d2;
+}
+
+.row{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.week1{
+    float: left;
+    margin-left: 200px;
+}
+
+.week2{
+    display: inline-block;
+    margin: 50px auto;
+}
+
+.week3{
+    float: right;
+    margin-right: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p{
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* to make all pictures same in size */
+#week-pic{
+    width:  100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
